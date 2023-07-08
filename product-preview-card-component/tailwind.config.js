@@ -17,10 +17,8 @@ module.exports = {
         fraunces: ["Fraunces", ...defaultTheme.fontFamily.sans],
       },
       backgroundImage: {
-        desktop:
-          "url('/product-preview-card-component/images/image-product-desktop.jpg')",
-        mobile:
-          "url('/product-preview-card-component/images/image-product-mobile.jpg')",
+        desktop: "url('../images/image-product-desktop.jpg')",
+        mobile: "url('../images/image-product-mobile.jpg')",
       },
     },
   },

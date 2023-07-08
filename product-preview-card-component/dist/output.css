@@ -775,28 +775,12 @@ video {
   display: none;
 }
 
-.h-auto {
-  height: auto;
-}
-
-.h-96 {
-  height: 24rem;
-}
-
-.h-\[100px\] {
-  height: 100px;
-}
-
 .h-\[300px\] {
   height: 300px;
 }
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.w-auto {
-  width: auto;
 }
 
 .max-w-3xl {
@@ -1792,7 +1776,7 @@ video {
 }
 
 .bg-mobile {
-  background-image: url('/product-preview-card-component/images/image-product-mobile.jpg');
+  background-image: url('../images/image-product-mobile.jpg');
 }
 
 .decoration-slice {
@@ -2535,7 +2519,7 @@ html {
   }
 
   .sm\:bg-desktop {
-    background-image: url('/product-preview-card-component/images/image-product-desktop.jpg');
+    background-image: url('../images/image-product-desktop.jpg');
   }
 
   .sm\:text-5xl {
