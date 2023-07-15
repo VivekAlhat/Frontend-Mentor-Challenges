@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div className="bg-dark-blue h-screen grid place-items-center">
-      <section className="max-w-2xl min-h-[350px] flex flex-col items-center justify-evenly gap-8 relative bg-dark-grayish-blue p-12 rounded-2xl mx-2">
+      <div className="max-w-2xl min-h-[350px] flex flex-col items-center justify-evenly gap-8 relative bg-dark-grayish-blue p-12 rounded-2xl mx-2">
         {isLoading ? (
           <Loader />
         ) : (
@@ -39,7 +39,7 @@ function App() {
             getAdvice={getAdvice}
           />
         )}
-      </section>
+      </div>
     </div>
   );
 }
