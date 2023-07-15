@@ -5,16 +5,16 @@ import { newsItems } from "../../utils/constant";
 
 const Hero = () => {
   return (
-    <section className="grid grid-cols-1 sm:grid-cols-3 sm:grid-rows-2 gap-8 mt-14">
+    <section className="grid grid-cols-1 xl:grid-cols-3 xl:grid-rows-2 gap-8 mt-14">
       <img
         src="/images/image-web-3-desktop.jpg"
         alt="web 3 hero"
-        className="sm:col-span-2 h-[300px] w-full object-cover"
+        className="xl:col-span-2 h-[300px] w-full object-cover"
       />
-      <h1 className="sm:col-start-1 sm:row-start-2 text-5xl sm:text-7xl font-black">
+      <h1 className="xl:col-start-1 xl:row-start-2 text-5xl xl:text-7xl font-black">
         The Bright Future of Web 3.0?
       </h1>
-      <div className="sm:col-start-2 sm:row-start-2">
+      <div className="xl:col-start-2 xl:row-start-2">
         <p className="text-dark-grayish-blue leading-relaxed text-xl">
           We dive into the next evolution of the web that claims to put the
           power of the platforms back into the hands of the people. But is it

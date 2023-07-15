@@ -4,17 +4,6 @@ import { links } from "../../utils/constant";
 import { motion } from "framer-motion";
 
 const MobileMenu = ({ closeMenu }) => {
-  const listVariants = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.5 },
-    },
-  };
-  const listItemVariants = { hidden: { opacity: 0 }, visible: { opacity: 1 } };
-
   return (
     <motion.div
       initial={{ x: 100 }}
@@ -30,18 +19,13 @@ const MobileMenu = ({ closeMenu }) => {
           onClick={closeMenu}
         />
       </div>
-      <motion.ul
-        variants={listVariants}
-        animate="visible"
-        initial="hidden"
-        className="flex flex-col gap-12 mt-28 pl-5"
-      >
+      <ul className="flex flex-col gap-12 mt-28 pl-5">
         {links.map((link, id) => (
-          <motion.li key={id} variants={listItemVariants}>
+          <li key={id}>
             <Link link={link} />
-          </motion.li>
+          </li>
         ))}
-      </motion.ul>
+      </ul>
     </motion.div>
   );
 };
