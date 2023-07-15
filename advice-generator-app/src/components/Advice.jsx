@@ -4,7 +4,7 @@ const Advice = ({ adviceDetails, pattern, getAdvice }) => {
   const { id, advice } = adviceDetails;
 
   return (
-    <div className="mx-2">
+    <>
       <p className="text-neon-green uppercase tracking-[5px]">Advice #{id}</p>
       <motion.p
         initial={{ opacity: 0 }}
@@ -26,7 +26,7 @@ const Advice = ({ adviceDetails, pattern, getAdvice }) => {
       >
         <img src="/images/icon-dice.svg" alt="generate advice" />
       </motion.div>
-    </div>
+    </>
   );
 };
 

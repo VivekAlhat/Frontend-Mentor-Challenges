@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div className="bg-dark-blue h-screen grid place-items-center">
-      <section className="max-h-[400px] max-w-[400px] md:max-w-[500px] lg:max-w-[700px] flex flex-col items-center justify-evenly gap-8 relative bg-dark-grayish-blue p-12 rounded-2xl">
+      <section className="min-h-[400px] min-w-[400px] md:max-w-[500px] lg:max-w-[700px] flex flex-col items-center justify-evenly gap-8 relative bg-dark-grayish-blue p-12 rounded-2xl mx-2">
         {isLoading ? (
           <Loader />
         ) : (
