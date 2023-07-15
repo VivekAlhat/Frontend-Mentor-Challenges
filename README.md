@@ -4,3 +4,4 @@
 | --------- | -------- | -------- |
 | Results Summary Component | [View Source](https://github.com/VivekAlhat/Frontend-Mentor-Challenges/tree/main/results-summary-component)| [View Solution](https://earnest-sunflower-bdfce5.netlify.app/)
 | Product Preview Card Component | [View Source](https://github.com/VivekAlhat/Frontend-Mentor-Challenges/tree/main/product-preview-card-component) | [View Solution](https://incomparable-dodol-42c2bb.netlify.app/)
+| News Homepage | [View Source](https://github.com/VivekAlhat/Frontend-Mentor-Challenges/tree/main/news-homepage) | [View Solution](https://animated-paletas-af188e.netlify.app/)
