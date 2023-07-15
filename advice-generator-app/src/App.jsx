@@ -13,7 +13,9 @@ function App() {
 
   const getAdvice = async () => {
     setIsLoading(true);
-    const response = await fetch("https://api.adviceslip.com/advice");
+    const response = await fetch("https://api.adviceslip.com/advice", {
+      cache: "no-cache",
+    });
     const advice = await response.json();
     setAdvice(advice.slip);
     setIsLoading(false);

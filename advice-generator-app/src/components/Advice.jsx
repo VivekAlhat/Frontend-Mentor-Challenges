@@ -9,7 +9,7 @@ const Advice = ({ adviceDetails, pattern, getAdvice }) => {
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, staggerChildren: 0.3 }}
+        transition={{ duration: 0.5 }}
         className="text-light-cyan text-[28px] text-center"
       >
         &quot;{advice}&quot;
@@ -20,7 +20,7 @@ const Advice = ({ adviceDetails, pattern, getAdvice }) => {
         className="mb-8"
       />
       <motion.div
-        whileHover={{ scale: 1.2, rotate: 90 }}
+        whileHover={{ rotate: 90 }}
         className="bg-neon-green p-6 cursor-pointer rounded-full absolute -bottom-8 mx-auto hover:shadow-simple  hover:shadow-neon-green transition ease-linear"
         onClick={getAdvice}
       >
