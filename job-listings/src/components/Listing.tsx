@@ -1,4 +1,5 @@
 import Filter from "./Filter";
+import Pill from "./Pill";
 import Separator from "./Separator";
 
 const Listing: React.FC<ListingProps> = ({ listing }) => {
@@ -32,15 +33,12 @@ const Listing: React.FC<ListingProps> = ({ listing }) => {
         <div className="space-y-2 mt-4 sm:mt-0">
           <div className="flex gap-6">
             <p className="text-dark-cyan font-bold">{company}</p>
-            {isNew && (
-              <p className="px-2 text-sm bg-dark-cyan text-white inline-flex items-center rounded-full">
-                NEW!
-              </p>
-            )}
+            {isNew && <Pill name="NEW!" colors="bg-dark-cyan text-white" />}
             {featured && (
-              <p className="px-2 text-sm bg-very-dark-grayish-cyan inline-flex items-center text-white rounded-full">
-                FEATURED
-              </p>
+              <Pill
+                name="FEATURED"
+                colors="bg-very-dark-grayish-cyan text-white"
+              />
             )}
           </div>
           <h1 className="cursor-pointer text-lg text-very-dark-grayish-cyan hover:text-dark-cyan font-bold">
@@ -60,8 +58,9 @@ const Listing: React.FC<ListingProps> = ({ listing }) => {
         <Filter name={role} />
         <Filter name={level} />
         {languages.length > 0 &&
-          languages.map((lang) => <Filter name={lang} />)}
-        {tools.length > 0 && tools.map((tool) => <Filter name={tool} />)}
+          languages.map((lang) => <Filter key={lang} name={lang} />)}
+        {tools.length > 0 &&
+          tools.map((tool) => <Filter key={tool} name={tool} />)}
       </div>
     </div>
   );

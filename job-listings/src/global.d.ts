@@ -21,3 +21,8 @@ type ListingProps = {
 type FilterProps = {
   name: string;
 };
+
+type PillProps = {
+  name: string;
+  colors: string;
+};
