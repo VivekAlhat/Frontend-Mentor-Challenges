@@ -26,3 +26,12 @@ type PillProps = {
   name: string;
   colors: string;
 };
+
+type FilterContextProps = {
+  filter: string[];
+  changeFilter: (name: string) => void;
+};
+
+type FilterContextProviderProps = {
+  children: React.ReactNode;
+};
