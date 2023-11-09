@@ -8,7 +8,6 @@
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
 - [Author](#author)
 
 Overview
@@ -23,10 +22,12 @@ Users should be able to:
 
 ### Screenshot
 
+![Screenshot](/job-listings/screenshot/job-listings.png)
+
 ### Links
 
 - Solution URL: [Source Code](https://github.com/VivekAlhat/Frontend-Mentor-Challenges/tree/main/job-listings)
-- Live Site URL: [Live Solution](#)
+- Live Site URL: [Live Solution](https://remarkable-speculoos-10ebfc.netlify.app/)
 
 ## My process
 
@@ -35,8 +36,6 @@ Users should be able to:
 - Vite
 - [React](https://reactjs.org/)
 - Tailwind CSS
-
-### What I learned
 
 ## Author
 
