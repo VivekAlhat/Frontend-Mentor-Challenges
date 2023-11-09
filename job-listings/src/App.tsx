@@ -28,7 +28,7 @@ function App() {
   return (
     <main>
       <div className="bg-mobile sm:bg-desktop h-[130px] bg-dark-cyan w-full"></div>
-      <section className="flex flex-col px-6 py-12 sm:p-12 h-screen bg-light-cyan-background">
+      <section className="flex flex-col px-6 py-12 sm:p-12 min-h-screen bg-light-cyan-background">
         {filter.length > 0 && <FilterTab />}
         <div className="space-y-6">
           {listings.map(
