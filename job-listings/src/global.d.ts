@@ -29,7 +29,8 @@ type PillProps = {
 
 type FilterContextProps = {
   filter: string[];
-  changeFilter: (name: string) => void;
+  addFilter: (name: string) => void;
+  clearFilter: (name?: string) => void;
 };
 
 type FilterContextProviderProps = {

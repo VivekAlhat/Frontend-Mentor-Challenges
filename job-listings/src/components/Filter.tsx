@@ -1,10 +1,10 @@
 import useFilter from "../hooks/useFilter";
 
 const Filter: React.FC<FilterProps> = ({ name }) => {
-  const { changeFilter } = useFilter();
+  const { addFilter } = useFilter();
 
   const handleFilterChange = () => {
-    changeFilter(name);
+    addFilter(name);
   };
 
   return (

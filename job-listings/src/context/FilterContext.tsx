@@ -2,7 +2,8 @@ import { createContext, useState } from "react";
 
 const data = {
   filter: [],
-  changeFilter: () => {},
+  addFilter: () => {},
+  clearFilter: () => {},
 };
 
 export const FilterContext = createContext<FilterContextProps>(data);
@@ -12,12 +13,24 @@ const FilterContextProvider: React.FC<FilterContextProviderProps> = ({
 }) => {
   const [filter, setFilter] = useState<string[]>([]);
 
-  const changeFilter = (name: string) => {
-    setFilter((prev) => [...prev, name]);
+  const addFilter = (name: string) => {
+    const isApplied = filter.includes(name);
+    if (!isApplied) {
+      setFilter((prev) => [...prev, name]);
+    }
+  };
+
+  const clearFilter = (name?: string) => {
+    if (name) {
+      const filteredListings = filter.filter((item) => item !== name);
+      setFilter(filteredListings);
+    } else {
+      setFilter([]);
+    }
   };
 
   return (
-    <FilterContext.Provider value={{ filter, changeFilter }}>
+    <FilterContext.Provider value={{ filter, addFilter, clearFilter }}>
       {children}
     </FilterContext.Provider>
   );
