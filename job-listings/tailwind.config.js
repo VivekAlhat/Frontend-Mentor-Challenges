@@ -16,8 +16,8 @@ export default {
         sans: ["League Spartan", ...defaultTheme.fontFamily.sans],
       },
       backgroundImage: {
-        desktop: "url('./images/bg-header-desktop.svg')",
-        mobile: "url('./images/bg-header-mobile.svg')",
+        desktop: "url('/images/bg-header-desktop.svg')",
+        mobile: "url('/images/bg-header-mobile.svg')",
       },
     },
   },
