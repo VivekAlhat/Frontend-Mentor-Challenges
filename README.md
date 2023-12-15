@@ -7,3 +7,4 @@
 | News Homepage                  | [View Source](https://github.com/VivekAlhat/Frontend-Mentor-Challenges/tree/main/news-homepage)                  | [View Solution](https://animated-paletas-af188e.netlify.app/)     |
 | Advice Generator App           | [View Source](https://github.com/VivekAlhat/Frontend-Mentor-Challenges/tree/main/advice-generator-app)           | [View Solution](https://thriving-pegasus-90997e.netlify.app/)     |
 | Job Listings                   | [View Source](https://github.com/VivekAlhat/Frontend-Mentor-Challenges/tree/main/job-listings)                   | [View Solution](https://remarkable-speculoos-10ebfc.netlify.app/) |
+| Social Media Dashboard         | [View Source](https://github.com/VivekAlhat/Frontend-Mentor-Challenges/tree/main/social-media-dashboard)         | [View Solution](#)                                                |
