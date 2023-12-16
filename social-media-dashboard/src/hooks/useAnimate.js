@@ -1,5 +1,6 @@
 import { animate } from "framer-motion";
 import { useEffect, useState } from "react";
+import { convertToK } from "../utils/utils";
 
 const useAnimate = (maxValue, duration = 1) => {
   const [count, setCount] = useState(0);
@@ -15,7 +16,7 @@ const useAnimate = (maxValue, duration = 1) => {
     return () => controls.stop();
   }, [duration, maxValue]);
 
-  return count;
+  return convertToK(count);
 };
 
 export default useAnimate;
