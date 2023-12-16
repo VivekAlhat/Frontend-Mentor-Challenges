@@ -23,12 +23,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](/social-media-dashboard/screenshot/social-media-dashboard.PNG)
+![Screenshot](/social-media-dashboard/screenshot/social-media-dashboard.png)
 
 ### Links
 
-- Solution URL: [Source Code](https://your-solution-url.com)
-- Live Site URL: [Live Solution](https://your-live-site-url.com)
+- Solution URL: [Source Code](https://github.com/VivekAlhat/Frontend-Mentor-Challenges/tree/main/social-media-dashboard)
+- Live Site URL: [Live Solution](https://luminous-melomakarona-0cfdb7.netlify.app/)
 
 ## My process
 
