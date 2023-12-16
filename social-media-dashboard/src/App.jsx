@@ -11,10 +11,10 @@ function App() {
 
   return (
     <main className="min-h-screen bg-white dark:text-c-white dark:bg-very-dark-blue-bg-d">
-      <div className="h-72 lg:h-56 w-full bg-very-pale-blue-bg-top-l dark:bg-very-dark-blue-bg-top-d px-8 pt-12 lg:pt-10 lg:px-20">
+      <div className="h-72 lg:h-56 w-full bg-very-pale-blue-bg-top-l dark:bg-very-dark-blue-bg-top-d px-4 pt-12 lg:pt-10 lg:px-20">
         <Header totalFollowers={totalFollowers} />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full px-8 pb-12 -my-20 lg:px-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full px-4 pb-12 -my-20 lg:px-20">
         {main.map((p) => (
           <SocialCard
             key={p.id}
