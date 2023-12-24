@@ -27,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screenshot](/faq-accordion/screenshot/faq-accordion.png)
 
 ### Links
 
 - Solution URL: [Source Code](https://github.com/VivekAlhat/Frontend-Mentor-Challenges/tree/main/faq-accordion)
-- Live Site URL: [Live Solution](https://your-live-site-url.com)
+- Live Site URL: [Live Solution](https://leafy-pithivier-f955d6.netlify.app/)
 
 ## My process
 
@@ -48,7 +48,7 @@ I learned how to make a component accessible and add keyboard navigation.
 
 ### Continued development
 
-I will spend time on checking how to make design look better on smaller screen sizes (320px). Currently it works will 350px.
+I will spend soem time on checking how to make design look better on smaller screen sizes (320px). Currently it works well 350px.
 
 ### Useful resources
 
