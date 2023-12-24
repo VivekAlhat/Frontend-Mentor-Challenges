@@ -7,7 +7,7 @@ function App() {
   return (
     <main className="min-h-screen bg-light-pink relative">
       <div className="bg-mobile sm:bg-desktop h-48 md:h-56 lg:h-60"></div>
-      <section className="bg-white absolute max-w-min min-w-[360px] md:min-w-[600px] lg:min-w-[700px] left-1/2 transform -translate-x-1/2 flex flex-col gap-4 rounded-xl p-4 mx-4 lg:p-8 shadow-lg -my-24 md:-my-28">
+      <section className="bg-white absolute max-w-min min-w-[360px] md:min-w-[600px] lg:min-w-[700px] left-1/2 transform -translate-x-1/2 flex flex-col gap-4 rounded-xl p-4 mx-2 lg:p-8 shadow-lg -my-24 md:-my-28">
         <div className="flex items-center gap-4">
           <img
             src="/assets/images/icon-star.svg"
