@@ -19,6 +19,9 @@ export default {
         desktop: "url(/assets/images/background-pattern-desktop.svg)",
         mobile: "url(/assets/images/background-pattern-mobile.svg)",
       },
+      screens: {
+        xs: "320px",
+      },
     },
   },
   plugins: [],

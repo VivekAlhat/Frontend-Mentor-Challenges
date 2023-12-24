@@ -5,9 +5,9 @@ function App() {
   const [activeId, setActiveId] = useState(1);
 
   return (
-    <main className="h-screen bg-light-pink relative">
-      <div className="bg-mobile sm:bg-desktop h-60"></div>
-      <section className="bg-white absolute max-w-min min-w-[350px] md:min-w-[600px] lg:min-w-[700px] left-1/2 transform -translate-x-1/2 flex flex-col gap-8 rounded-xl p-4 lg:p-8 shadow-lg -my-28">
+    <main className="min-h-screen bg-light-pink relative">
+      <div className="bg-mobile sm:bg-desktop h-48 md:h-56 lg:h-60"></div>
+      <section className="bg-white absolute max-w-min min-w-[360px] md:min-w-[600px] lg:min-w-[700px] left-1/2 transform -translate-x-1/2 flex flex-col gap-4 rounded-xl p-4 lg:p-8 shadow-lg -my-24 md:-my-28">
         <div className="flex items-center gap-4">
           <img
             src="/assets/images/icon-star.svg"
@@ -31,7 +31,7 @@ function App() {
                 aria-expanded={activeId === f.id}
                 aria-controls="accordion-content"
                 type="button"
-                className="flex items-center justify-between w-full gap-8 focus:p-3"
+                className="flex items-center justify-between w-full gap-8"
               >
                 <p className="text-dark-purple text-left hover:text-purple cursor-pointer font-semibold">
                   {f.question}
@@ -45,7 +45,6 @@ function App() {
                   }`}
                   alt={`${activeId === f.id ? "collapse" : "expand"}`}
                   className="cursor-pointer"
-                  onClick={() => setActiveId((id) => (id === f.id ? 0 : f.id))}
                 />
               </button>
               <p

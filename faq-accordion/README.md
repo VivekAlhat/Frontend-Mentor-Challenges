@@ -14,8 +14,6 @@
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -33,19 +31,28 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Source Code](https://your-solution-url.com)
+- Solution URL: [Source Code](https://github.com/VivekAlhat/Frontend-Mentor-Challenges/tree/main/faq-accordion)
 - Live Site URL: [Live Solution](https://your-live-site-url.com)
 
 ## My process
 
 ### Built with
 
+- Vite
+- [React](https://react.dev/)
+- Tailwind CSS
+
 ### What I learned
+
+I learned how to make a component accessible and add keyboard navigation.
+
+### Continued development
+
+I will spend time on checking how to make design look better on smaller screen sizes (320px). Currently it works will 350px.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Blog](https://dev.to/eevajonnapanula/expand-the-content-inclusively-building-an-accessible-accordion-with-react-2ded)
 
 ## Author
 
