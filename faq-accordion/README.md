@@ -48,7 +48,7 @@ I learned how to make a component accessible and add keyboard navigation.
 
 ### Continued development
 
-I will spend soem time on checking how to make design look better on smaller screen sizes (320px). Currently it works well 350px.
+I will spend some time on checking how to make design look better on smaller screen sizes (320px). Currently it works well on 350px.
 
 ### Useful resources
 
