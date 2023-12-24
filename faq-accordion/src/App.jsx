@@ -29,13 +29,13 @@ function App() {
               <button
                 onClick={() => setActiveId((id) => (id === f.id ? 0 : f.id))}
                 aria-expanded={activeId === f.id}
-                aria-controls="accordion-content"
+                aria-controls={`accordion-content-${f.id}`}
                 type="button"
                 className="flex items-center justify-between w-full gap-8"
               >
-                <p className="text-dark-purple text-left hover:text-purple cursor-pointer font-semibold">
+                <span className="text-dark-purple text-left hover:text-purple cursor-pointer font-semibold">
                   {f.question}
-                </p>
+                </span>
 
                 <img
                   src={`${
@@ -48,7 +48,7 @@ function App() {
                 />
               </button>
               <p
-                id="accordion-content"
+                id={`accordion-content-${f.id}`}
                 className="text-grayish-purple"
                 hidden={activeId !== f.id}
                 role="region"
