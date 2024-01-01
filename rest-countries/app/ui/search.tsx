@@ -2,7 +2,7 @@ import { SearchIcon } from "lucide-react";
 
 export default function Search() {
   return (
-    <div className="relative flex lg:min-w-[400px] drop-shadow-sm">
+    <div className="relative flex lg:min-w-[500px] drop-shadow-sm">
       <label htmlFor="search" className="sr-only">
         Search
       </label>

@@ -20,7 +20,7 @@ export default function Select() {
         className="bg-white drop-shadow-sm py-3 cursor-pointer px-6 rounded-md flex gap-4 items-center justify-between"
         onClick={() => setShowDropdown((prev) => !prev)}
       >
-        <p className="font-semibold">Filter by Region</p>
+        <p className="font-semibold">{selectedRegion || "Filter by Region"}</p>
         <ChevronDown className="h-4 w-4" />
       </div>
       {showDropdown && (

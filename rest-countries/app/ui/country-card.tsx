@@ -1,4 +1,8 @@
+"use client";
+
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import CountryData from "./country-data";
 
 export default function CountryCard({
   name,
@@ -7,8 +11,17 @@ export default function CountryCard({
   capital,
   flag,
 }: CountryCardProps) {
+  const router = useRouter();
+
+  const visitCountry = () => {
+    router.push(`/${name}`);
+  };
+
   return (
-    <div className="group drop-shadow-sm bg-white rounded-md">
+    <div
+      className="group drop-shadow-sm bg-white rounded-md cursor-pointer"
+      onClick={visitCountry}
+    >
       <div className="relative aspect-video">
         <Image
           src={flag}
@@ -21,20 +34,9 @@ export default function CountryCard({
       </div>
       <div className="p-4 space-y-2">
         <h1 className="font-bold text-xl mb-6">{name}</h1>
-        <p>
-          <span className="font-semibold">Population:</span>&nbsp;
-          {population}
-        </p>
-        <p>
-          <span className="font-semibold">Region:</span>&nbsp;
-          {region}
-        </p>
-        {capital?.length > 0 && (
-          <p>
-            <span className="font-semibold">Capital:</span>&nbsp;
-            {capital.at(0)}
-          </p>
-        )}
+        <CountryData title="Population" data={population} />
+        <CountryData title="Region" data={region} />
+        {capital && <CountryData title="Capital" data={capital} />}
       </div>
     </div>
   );
