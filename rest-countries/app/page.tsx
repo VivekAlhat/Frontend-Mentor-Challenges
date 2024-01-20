@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: "Your passport to global knowledge",
 };
 
-export default function Home({ searchParams }: HomePageProps) {
+export default function Page({ searchParams }: HomePageProps) {
   const country = searchParams?.country || "";
   const region = searchParams?.region || "";
 

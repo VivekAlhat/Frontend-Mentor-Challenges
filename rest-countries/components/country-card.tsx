@@ -1,11 +1,15 @@
 import Image from "next/image";
 import Span from "./span";
+import Link from "next/link";
 
 export default function CountryCard({ country }: CountryCardProps) {
   const { flag, name, population, region, capital } = country;
 
   return (
-    <div className="shadow-sm border dark:border-none border-slate-100 cursor-pointer">
+    <Link
+      href={`/country/${name.toLowerCase()}`}
+      className="shadow-sm border dark:border-none border-slate-100 cursor-pointer"
+    >
       <Image
         src={flag}
         alt={name}
@@ -23,11 +27,13 @@ export default function CountryCard({ country }: CountryCardProps) {
           <p>
             <Span>Region:</Span>&nbsp;{region}
           </p>
-          <p>
-            <Span>Capital:</Span>&nbsp;{capital}
-          </p>
+          {capital && capital?.length > 0 && (
+            <p>
+              <Span>Capital:</Span>&nbsp;{capital}
+            </p>
+          )}
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

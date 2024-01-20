@@ -77,3 +77,9 @@ interface Children {
 interface CountryCardProps {
   country: Country;
 }
+
+interface CountryDetailsProps {
+  params: {
+    slug: string;
+  };
+}
