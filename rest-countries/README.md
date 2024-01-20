@@ -28,18 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+![Screenshot](/rest-countries/screenshot/rest-countries.png)
 
 ### Links
 
 - Solution URL: [Source Code](https://github.com/VivekAlhat/Frontend-Mentor-Challenges/tree/main/rest-countries)
-- Live Site URL: [Live Solution](#)
+- Live Site URL: [Live Solution](https://rest-countries-1e2f.vercel.app/)
 
 ## My process
 
