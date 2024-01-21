@@ -16,7 +16,7 @@ export default function Back() {
 
   return (
     <div
-      className="flex items-center gap-3 w-fit py-2 px-6 dark:bg-dark-mode-el shadow-custom rounded-md hover:bg-slate-50 dark:hover:bg-slate-700"
+      className="flex items-center cursor-pointer gap-3 w-fit py-2 px-6 dark:bg-dark-mode-el shadow-custom rounded-md hover:bg-slate-50 dark:hover:bg-slate-700"
       onClick={redirectToHome}
     >
       <ArrowLeft className="h-5 w-5" />
