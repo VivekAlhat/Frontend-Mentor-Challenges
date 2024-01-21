@@ -7,8 +7,8 @@ export default function CountryCard({ country }: CountryCardProps) {
 
   return (
     <Link
-      href={`/country/${name.toLowerCase()}`}
-      className="shadow-custom border dark:border-none border-slate-100"
+      href={`/country/${name}`}
+      className="shadow-custom border dark:border-none border-slate-100 flex flex-col"
     >
       <Image
         src={flag}
@@ -18,7 +18,7 @@ export default function CountryCard({ country }: CountryCardProps) {
         className="w-full h-[200px] object-cover rounded-t-md"
         priority
       />
-      <div className="space-y-4 p-4 dark:bg-dark-mode-el rounded-b-md">
+      <div className="space-y-4 p-4 dark:bg-dark-mode-el rounded-b-md flex-grow">
         <h1 className="font-bold text-xl">{name}</h1>
         <div className="space-y-1 text-light-mode-text dark:text-white">
           <p>

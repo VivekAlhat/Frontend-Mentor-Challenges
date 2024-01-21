@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { Nunito_Sans } from "next/font/google";
 import "./globals.css";
 
-import ThemeProvider from "@/providers/theme-provider";
 import Header from "@/components/header";
+import ThemeProvider from "@/providers/theme-provider";
+import RegionProvider from "@/providers/region-provider";
 
 const nunito_sans = Nunito_Sans({
   subsets: ["latin"],
@@ -24,10 +25,12 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={nunito_sans.className}>
         <ThemeProvider>
-          <main className="min-h-screen bg-white dark:bg-dark-mode-bg">
-            <Header />
-            {children}
-          </main>
+          <RegionProvider>
+            <main className="min-h-screen bg-white dark:bg-dark-mode-bg">
+              <Header />
+              {children}
+            </main>
+          </RegionProvider>
         </ThemeProvider>
       </body>
     </html>

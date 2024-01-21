@@ -1,6 +1,7 @@
 interface SearchParams {
   country?: string;
   region?: string;
+  page?: number;
 }
 
 interface Country {
@@ -91,4 +92,13 @@ interface CountryInfoProps {
 
 interface BorderProps {
   borders: string[];
+}
+
+interface CountriesProps {
+  countries: Country[];
+}
+
+interface RegionContext {
+  region: string;
+  setRegion: (region: string) => void;
 }

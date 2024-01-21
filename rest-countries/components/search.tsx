@@ -1,7 +1,7 @@
 "use client";
 
 import { SearchIcon } from "lucide-react";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { FormEvent, useState } from "react";
 
 export default function Search() {
@@ -9,10 +9,11 @@ export default function Search() {
 
   const router = useRouter();
   const pathname = usePathname();
+  const searchParams = useSearchParams();
 
   const handleFormSubmit = (e: FormEvent) => {
     e.preventDefault();
-    const params = new URLSearchParams();
+    const params = new URLSearchParams(searchParams);
     if (searchTerm.length > 0) {
       params.set("country", searchTerm);
     } else {

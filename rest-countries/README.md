@@ -38,9 +38,15 @@ Users should be able to:
 ### Built with
 
 - [Tailwind](https://tailwindcss.com)
-- [Next.js](https://nextjs.org/)
+- [Next.js](https://nextjs.org/) - App router
 
 ### What I learned
+
+- This solution is built with Next.JS 14 app router
+- I learned how to use server and client components
+- I learned how to handle navigation in app router
+- I learned how to create custom not found pages
+- I implemented pagination
 
 ## Author
 
