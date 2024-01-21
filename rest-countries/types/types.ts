@@ -83,3 +83,12 @@ interface CountryDetailsProps {
     slug: string;
   };
 }
+
+interface CountryInfoProps {
+  prop: string;
+  value: string;
+}
+
+interface BorderProps {
+  borders: string[];
+}

@@ -8,7 +8,7 @@ export default function CountryCard({ country }: CountryCardProps) {
   return (
     <Link
       href={`/country/${name.toLowerCase()}`}
-      className="shadow-sm border dark:border-none border-slate-100 cursor-pointer"
+      className="shadow-custom border dark:border-none border-slate-100"
     >
       <Image
         src={flag}

@@ -14,6 +14,9 @@ const config: Config = {
         "light-mode-text": "hsl(200, 15%, 8%)",
         "light-mode-input": "hsl(0, 0%, 52%)",
       },
+      boxShadow: {
+        custom: "0 8px 30px rgb(0,0,0,0.12)",
+      },
     },
   },
   darkMode: "class",

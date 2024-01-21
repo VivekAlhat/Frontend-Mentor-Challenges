@@ -21,7 +21,7 @@ export default function DropDown() {
   };
 
   return (
-    <div className="relative font-semibold">
+    <div className="relative font-semibold shadow-custom">
       <button
         id="region"
         className="dark:bg-dark-mode-el w-full md:w-[200px] p-4 rounded-md shadow-sm border border-slate-200 dark:border-none dark:text-white focus:outline-slate-300 flex items-center justify-between"
@@ -31,7 +31,7 @@ export default function DropDown() {
         <ChevronDown className="w-5 h-5" />
       </button>
       {isSelected && (
-        <ul className="dark:bg-dark-mode-el bg-white py-2 absolute rounded-md shadow-sm border border-slate-200 dark:border-none dark:text-white mt-1 w-full">
+        <ul className="shadow-custom dark:bg-dark-mode-el bg-white py-2 absolute rounded-md border border-slate-200 dark:border-none dark:text-white mt-1 w-full">
           {regions.map((region) => (
             <li
               key={region.id}

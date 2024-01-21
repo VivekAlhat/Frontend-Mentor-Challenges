@@ -24,7 +24,7 @@ export default function Search() {
 
   return (
     <form
-      className="flex items-center gap-4 md:min-w-[350px] lg:min-w-[500px] dark:bg-dark-mode-el p-4 rounded-md shadow-sm border border-slate-200 dark:border-none text-light-mode-input dark:text-white"
+      className="flex items-center gap-4 md:min-w-[350px] lg:min-w-[500px] dark:bg-dark-mode-el p-4 rounded-md shadow-custom border border-slate-200 dark:border-none text-light-mode-input dark:text-white"
       onSubmit={handleFormSubmit}
     >
       <SearchIcon className="w-5 h-5" />
