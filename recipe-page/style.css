@@ -75,8 +75,10 @@ hr {
   background-color: var(--rose-white);
 }
 
-#prep-time > h3 {
+#prep-time > p {
   color: var(--dark-raspberry);
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 .list {
@@ -87,7 +89,7 @@ hr {
 }
 
 .recipe-details-inner > h2,
-#prep-time > h3 {
+#prep-time > p {
   margin-bottom: 14px;
 }
 
@@ -145,12 +147,14 @@ li > div {
     justify-content: center;
     background-color: var(--eggshell);
     font-size: 18px;
+    padding: 3rem;
   }
 
   main {
     background-color: var(--white);
     max-width: 700px;
     padding: 1rem;
+    border-radius: 15px;
   }
 
   #recipe-img {
