@@ -61,6 +61,10 @@ h2 {
   color: var(--nutmeg);
 }
 
+hr {
+  border-top: 1px solid var(--light-grey);
+}
+
 .recipe-details-inner,
 #prep-time {
   padding: 1rem;
@@ -104,6 +108,10 @@ li > div {
 
 .row {
   border-bottom: 1px solid var(--light-grey);
+}
+
+.row:last-child {
+  border: none;
 }
 
 .row > td:first-child {
