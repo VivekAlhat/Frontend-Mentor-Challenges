@@ -10,4 +10,4 @@
 | Social Media Dashboard         | [View Source](https://github.com/VivekAlhat/Frontend-Mentor-Challenges/tree/main/social-media-dashboard)         | [View Solution](https://luminous-melomakarona-0cfdb7.netlify.app/) |
 | FAQ Accordion                  | [View Source](https://github.com/VivekAlhat/Frontend-Mentor-Challenges/tree/main/faq-accordion)                  | [View Solution](https://leafy-pithivier-f955d6.netlify.app/)       |
 | REST Countries                 | [View Source](https://github.com/VivekAlhat/Frontend-Mentor-Challenges/tree/main/rest-countries)                 | [View Solution](https://rest-countries-1e2f.vercel.app/)           |
-| Recipe Page                    | [View Source](https://github.com/VivekAlhat/Frontend-Mentor-Challenges/tree/main/recipe-page)                    | [View Solution](#)                                                 |
+| Recipe Page                    | [View Source](https://github.com/VivekAlhat/Frontend-Mentor-Challenges/tree/main/recipe-page)                    | [View Solution](https://super-kheer-706b99.netlify.app/)           |

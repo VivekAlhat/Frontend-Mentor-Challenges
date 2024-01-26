@@ -20,7 +20,7 @@
 ### Links
 
 - Solution URL: [Source Code](https://github.com/VivekAlhat/Frontend-Mentor-Challenges/tree/main/recipe-page)
-- Live Site URL: [Live Solution](#)
+- Live Site URL: [Live Solution](https://super-kheer-706b99.netlify.app/)
 
 ## My process
 
