@@ -13,6 +13,7 @@ export default {
         "dark-blue-intro-signup": "hsl(217, 28%, 15%)",
         "dark-blue-main": "hsl(218, 28%, 13%)",
         "dark-blue-testimonial": "hsl(219, 30%, 18%)",
+        "dark-blue-footer": "hsl(216, 53%, 9%)",
         cyang: "hsl(176, 68%, 64%)",
         blueg: "hsl(198, 60%, 50%)",
       },

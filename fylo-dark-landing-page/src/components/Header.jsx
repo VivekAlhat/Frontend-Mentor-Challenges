@@ -10,7 +10,10 @@ export default function Header() {
       />
       <ul className="font-raleway flex items-center justify-between gap-4 md:gap-10">
         {navlinks.map((link) => (
-          <li key={link} className="capitalize text-sm">
+          <li
+            key={link}
+            className="capitalize text-sm md:text-[14px] text-white/80 hover:text-white hover:underline cursor-pointer"
+          >
             {link}
           </li>
         ))}

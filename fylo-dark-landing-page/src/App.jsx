@@ -4,6 +4,7 @@ import CTA from "./components/CTA";
 import Feature from "./components/Feature";
 
 import { features, testimonials } from "./utils/data";
+import { Facebook, Twitter, Instagram } from "lucide-react";
 
 function App() {
   return (
@@ -25,12 +26,14 @@ function App() {
               Access them wherever you need, share and collaborate with friends
               family, and co-workers.
             </p>
-            <CTA text="Get Started" />
+            <div className="w-[300px] mx-auto">
+              <CTA text="Get Started" />
+            </div>
           </div>
         </div>
         <Curve />
       </section>
-      <section className="bg-dark-blue-main p-6 md:p-12 lg:p-24 space-y-20 lg:space-y-40">
+      <section className="bg-dark-blue-main pt-6 px-6 md:pt-12 md:px-12 lg:pt-24 lg:px-24 space-y-20 lg:space-y-40 relative pb-64">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 place-items-center">
           {features.map((f) => (
             <Feature
@@ -42,7 +45,7 @@ function App() {
             />
           ))}
         </div>
-        <div className="flex flex-col lg:flex-row items-center gap-24">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-24">
           <img src="/illustration-stay-productive.png" alt="stay productive" />
           <div className="space-y-8 max-w-xl">
             <h1 className="text-xl lg:text-5xl">
@@ -98,7 +101,91 @@ function App() {
             className="absolute -top-8 -left-3 w-12"
           />
         </div>
+        <div className="bg-dark-blue-intro-signup p-8 md:p-12 max-w-5xl m-6 text-center rounded-md shadow-lg space-y-8 absolute -bottom-64 md:-bottom-40 left-0 lg:left-1/2 lg:-translate-x-1/2">
+          <h1 className="text-3xl">Get early access today</h1>
+          <p className="max-w-3xl mx-auto text-white/80">
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+          <div className="flex flex-col md:flex-row items-center gap-5">
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="email@example.com"
+              className="w-full p-3 rounded-full outline-none"
+            />
+            <div className="w-full md:w-[350px]">
+              <CTA text={"Get Started For Free"} />
+            </div>
+          </div>
+        </div>
       </section>
+      <footer className="bg-dark-blue-footer grid lg:place-content-center px-8 lg:px-24 pt-80 md:pt-64 pb-32 space-y-12">
+        <img src="/logo.svg" alt="fylo logo" />
+        <section className="flex flex-col lg:flex-row items-start gap-20 lg:gap-36">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center gap-12">
+            <div className="space-y-8 max-w-sm">
+              <div className="flex items-center gap-8">
+                <img src="/icon-location.svg" alt="location" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </p>
+              </div>
+            </div>
+            <div className="space-y-6">
+              <div className="flex items-center gap-8">
+                <img src="/icon-phone.svg" alt="phone" />
+                <p>+1-543-123-4567</p>
+              </div>
+              <div className="flex items-center gap-8">
+                <img src="/icon-email.svg" alt="email" />
+                <p>example@fylo.com</p>
+              </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <ul className="space-y-4">
+              <li className="text-white/80 hover:text-white hover:underline cursor-pointer">
+                About Us
+              </li>
+              <li className="text-white/80 hover:text-white hover:underline cursor-pointer">
+                Jobs
+              </li>
+              <li className="text-white/80 hover:text-white hover:underline cursor-pointer">
+                Press
+              </li>
+              <li className="text-white/80 hover:text-white hover:underline cursor-pointer">
+                Blog
+              </li>
+            </ul>
+            <ul className="space-y-4">
+              <li className="text-white/80 hover:text-white hover:underline cursor-pointer">
+                Contact Us
+              </li>
+              <li className="text-white/80 hover:text-white hover:underline cursor-pointer">
+                Terms
+              </li>
+              <li className="text-white/80 hover:text-white hover:underline cursor-pointer">
+                Privacy
+              </li>
+            </ul>
+          </div>
+          <div className="flex items-center gap-4">
+            <div className="border border-white rounded-full p-2 hover:text-cyang cursor-pointer">
+              <Facebook />
+            </div>
+            <div className="border border-white rounded-full p-2 hover:text-cyang cursor-pointer">
+              <Twitter />
+            </div>
+            <div className="border border-white rounded-full p-2 hover:text-cyang cursor-pointer">
+              <Instagram />
+            </div>
+          </div>
+        </section>
+      </footer>
     </main>
   );
 }
