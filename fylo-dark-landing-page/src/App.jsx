@@ -70,23 +70,23 @@ const HowItWorks = () => (
     <motion.img
       src="/illustration-stay-productive.png"
       alt="stay productive"
-      // initial={{ opacity: 0 }}
-      // whileInView={{ opacity: 1 }}
-      // transition={{
-      //   delay: 0.5,
-      //   ease: "circInOut",
-      // }}
-      // viewport={{ once: true }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{
+        delay: 0.5,
+        ease: "circInOut",
+      }}
+      viewport={{ once: true }}
     />
     <motion.div
       className="space-y-8 max-w-xl"
-      // initial={{ opacity: 0 }}
-      // whileInView={{ opacity: 1 }}
-      // transition={{
-      //   delay: 0.5,
-      //   ease: "easeInOut",
-      // }}
-      // viewport={{ once: true }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{
+        delay: 0.5,
+        ease: "easeInOut",
+      }}
+      viewport={{ once: true }}
     >
       <h1 className="text-xl lg:text-5xl">Stay productive, wherever you are</h1>
       <div className="space-y-6 text-white/80">
